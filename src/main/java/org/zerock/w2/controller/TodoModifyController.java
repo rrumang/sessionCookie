@@ -11,8 +11,8 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-@Log4j2
 @WebServlet(name = "TodoModifyController", urlPatterns = "/todo/modify")
+@Log4j2
 public class TodoModifyController extends HttpServlet {
 
     TodoService todoService = TodoService.INSTANCE;

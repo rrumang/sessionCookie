@@ -14,6 +14,8 @@
 <body>
 <h1>List Page</h1>
 <ul>
+    <h2>${loginInfo}</h2>
+    <h3>${loginInfo.mname}</h3>
     <c:forEach var="dto" items="${dtoList}">
         <li>
             <span><a href="/todo/read?tno=${dto.tno}">${dto.tno}</a> </span>
@@ -26,5 +28,8 @@
 <div>
     <a href="/todo/register">Register</a>
 </div>
+<form action="/logout" method="post">
+    <button type="submit">LOGOUT</button>
+</form>
 </body>
 </html>

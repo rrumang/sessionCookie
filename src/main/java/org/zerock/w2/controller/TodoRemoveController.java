@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@Log4j2
 @WebServlet(name = "TodoRemoveController", urlPatterns = "/todo/remove")
+@Log4j2
 public class TodoRemoveController extends HttpServlet {
 
     TodoService todoService = TodoService.INSTANCE;
